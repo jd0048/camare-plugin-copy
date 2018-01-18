@@ -4,7 +4,8 @@ addons:
     secure: QivPLlqTVvOo3TJeHxuBOfxU6lho1I0IxQ3b68yntkEQQJko6kzleXHfgjf0a8aw8m38E3+fxaBWF1bGyucGwOLDWY8Ddt2P2xg44zdXH5EXHd9oIqAgngIdzLvUtH3Db2TbQEtIGOkrnNR2STovjqB7vHGLASQrgs4oL7r32/s=
 env:
   global:
-  - SAUCE_USERNAME=snay
+  - SAUCE_USERNAME=jd_iphone
+  - SAUCE_ACCESS_KEY=815b9eab-c0b6-418f-8d53-2a0ad5de6513
   - TRAVIS_NODE_VERSION="4.2"
 matrix:
   include:
@@ -93,4 +94,3 @@ script:
   node /tmp/paramedic/main.js --config pr/$PLATFORM --plugin $(pwd) --shouldUseSauce
   --buildName travis-plugin-camera-$TRAVIS_JOB_NUMBER;
   fi
-
